@@ -1,0 +1,148 @@
+@media only screen and (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav ul li:last-of-type {
+      padding-bottom: 8px;
+    }
+  
+    nav ul.hidden {
+      display: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-family: "Inter", sans-serif;
+      color: #fff;
+      font-weight: 600;
+      font-size: 22px;
+      padding: 8px 0;
+      transition: all;
+      transition-duration: 300ms;
+      border-bottom: 1px solid rgba(255, 68, 0, 0);
+    }
+
+    nav ul li a:hover {
+      color: orangered;
+      border-bottom: 1px solid orangered;
+    }
+  
+    .menu-icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .hero {
+      margin-top: 20px;
+    }
+
+    .list {
+      margin: 32px auto auto;
+      text-align: left;
+      display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+    .list_item {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 300px;
+        display: grid;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+    .city {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      border-radius: 5px;
+      background-color: tomato;
+      padding: 5px 10px 5px;
+      color: white;
+      font-weight: 500
+    }
+    .list_item_content {
+      padding: 16px
+    }
+    .list_item_thumb {
+      width: 100%;
+      max-height: 200px
+    }
+    .list_item_rating {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #999;
+      font-weight: 500
+    }
+    .list_item_rating_value {
+      color: red;
+      text-decoration: none;
+      font-size: 38px;
+    }
+    .list_item_title {
+      font-weight: 500;
+      font-size: 38px;
+      margin-top: 10px;
+      transition: 0.3s opacity
+    }
+    .list_item_title:hover {
+      opacity: 0.5
+    }
+    .list_item_title a {
+      text-decoration: none;
+      color: inherit
+    }
+    .list_item_desc {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 1.5em
+    }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+    background-color: Black !important;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 400px;
+    top: 0;
+    z-index: 999;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+}
